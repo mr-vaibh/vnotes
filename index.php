@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>ReMART</title>
+	<title>VNotes</title>
 
 	<style>
 		#searchTxt {
@@ -25,7 +25,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">ReMART</a>
+		<a class="navbar-brand" href="#">VNotes</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
 	</nav>
 
 	<div class="container my-2">
-		<h1>Welcome to ReMART</h1>
+		<h1>Welcome to VNotes</h1>
 
 		<div class="card my-2">
 			<div class="card-body">
