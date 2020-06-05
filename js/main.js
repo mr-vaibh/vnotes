@@ -64,7 +64,7 @@ function showNotes() {
 	notesObj.forEach(function (element, index) {
 		html += `
 			<div class="card border-dark shadow-lg mb-2 mx-2 noteCard" style="width: 18rem;">
-				<div class="card-header h5" id="title${index}">${element.title}</div>
+				<div class="card-header h5" id="title${index}"><span>${element.title}</span></div>
 				<div class="card-body text-dark">
 					<p class="card-text" id="text${index}">${element.text}</p>
 				</div>
@@ -104,9 +104,10 @@ searchTxt.addEventListener('input', function (e) {
 	let inputVal = searchTxt.value.toLowerCase();
 	let noteCards = document.getElementsByClassName('noteCard');
 	Array.from(noteCards).forEach(function (element) {
+		let cardTitle = element.getElementsByTagName('span')[0].innerText;
 		let cardTxt = element.getElementsByTagName('p')[0].innerText;
 		// console.log(cardTxt);
-		if (cardTxt.includes(inputVal)) {
+		if (cardTitle.includes(inputVal) || cardTxt.includes(inputVal)) {
 			element.style.display = 'inherit';
 		} else {
 			element.style.display = 'none';
